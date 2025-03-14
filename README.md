@@ -2,6 +2,40 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Deployed application URL
+
+https://crud-mockapi-app.netlify.app/
+
+## Steps to run the project locally
+
+1. Initialize the React app with typescript using following command
+   
+   npx create-react-app my-app --template typescript
+   cd my-app
+   
+2. Install Tailwind css
+   
+   npm add -D tailwindcss
+   npm tailwindcss init -p
+
+3. Configure tailwind css
+
+   Open tailwind.config.js and update the content section:
+   content: [
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+
+  Add Tailwind directives in src/index.css:
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+     
+4. Install axios (to handle API interactions) using following command
+
+   npm install axios
+
+5. Start the project using "npm start"
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -44,5 +78,3 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
-## Deployed application URL
